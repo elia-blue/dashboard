@@ -207,3 +207,6 @@ pip-selfcheck.json
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/python,macos,visualstudiocode,venv
+
+## compiled css
+dashboard/static/style.css*
