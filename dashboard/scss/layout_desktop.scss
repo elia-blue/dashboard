@@ -1,0 +1,46 @@
+@import "colors.scss";
+
+@media screen and (min-width: 480px) {
+
+    body {
+        margin: 0px;
+        padding: 0px;
+        
+        width: 100vw;
+        height: 100vh;
+
+        font-size: 18pt;
+        font-family: 'Avenir Book', sans-serif;
+        color: $white;
+        background-color: $black;
+    }
+
+    .container {
+        margin: auto;
+        padding-top: 1rem;
+        width: 80%;
+        height: 95%;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .widget {
+        width: 45%;
+        height: 45%;
+
+        border: 1px solid $accent_dark;
+        border-radius: 1rem;
+    }
+
+    h1.widget-title {
+        border: none;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        color: $text_dark;
+        font-weight: 300;
+    }
+}

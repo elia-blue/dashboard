@@ -1,0 +1,12 @@
+$blue: #227C9D;
+$black: hsl(0, 0%, 15%);
+$green: #49a078;
+$white: hsl(40, 88%, 97%);
+$red: #90323d;
+
+$background: $black;
+$accent: $blue;
+$accent_light: lighten($blue, 15%);
+$accent_dark: darken($blue, 10%);
+$text: $white;
+$text_dark: hsl(40, 0%, 50%);
