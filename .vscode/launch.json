@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "name": "Python: Run Flask development server",
+      "type": "python",
+      "request": "launch",
+      "module": "dashboard"
+    }
+  ]
+}
