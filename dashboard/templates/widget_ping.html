@@ -1,0 +1,13 @@
+<div class="ping-container">
+    {% for target in widget.targets %}
+    <p>{{ target }}</p>
+    {% endfor %}
+</div>
+
+<style>
+    div.ping-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+</style>

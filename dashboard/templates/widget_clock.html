@@ -1,0 +1,29 @@
+<div class="clock-container">
+    <p id="clock-text">11:11:11</p>
+</div>
+
+<script>
+    var textElem = document.getElementById("clock-text");
+    var targetWidth = 1;  // Proportion of full screen width
+    var curFontSize = 20;  // Do not change
+
+    function updateClock() {
+        var d = new Date();
+        var s = "";
+        s += (10 > d.getHours  () ? "0" : "") + d.getHours  () + ":";
+        s += (10 > d.getMinutes() ? "0" : "") + d.getMinutes() + ":";
+        s += (10 > d.getSeconds() ? "0" : "") + d.getSeconds();
+        textElem.textContent = s;
+        setTimeout(updateClock, 1000 - d.getTime() % 1000 + 20);
+    }
+
+    updateClock();
+</script>
+
+<style>
+    #clock-text {
+        font-size: 6rem;
+        text-align: center;
+        vertical-align: center;
+    }
+</style>
